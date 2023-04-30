@@ -1,10 +1,12 @@
 import React from 'react'
 import FormNameUser from '../components/Home/FormNameUser'
+import { useSelector } from 'react-redux'
 
 const Home = () => {
-  return (
+  const {trainerName}= useSelector(state=>state) 
+   return (
     <div>
-    <h1>Pokedex</h1>
+    <h1>Pokedex de home</h1>
     <h2>Hi Trainer</h2>
     <p>Pleace give us your trainer name to start.</p>
     <FormNameUser/>
