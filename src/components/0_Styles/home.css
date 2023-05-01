@@ -2,7 +2,7 @@
 
 .pokedex__container{
     /* background-color: blueviolet; */
-    padding: 1em;
+    padding: .5em;
     height:  100vh;
     display: flex;
     flex-direction: column;
@@ -32,12 +32,17 @@ align-items: center;
 
 .pokedex_logo-img{
   width: 100%;
+ 
 }
-
-
 img{
   display: block;
   width: 100%;
+}
+
+.pokedex_logo-img img{
+  display: block;
+  width: 100%;
+  aspect-ratio:5/2;
 }
 
 
@@ -47,7 +52,7 @@ img{
     color: rgb(248, 5, 5);
     font-size: 1.1rem;
     font-weight: 100;
-    font-family: cursive;
+    font-family: initial;
 }
 
 .pokedex__give-name{
