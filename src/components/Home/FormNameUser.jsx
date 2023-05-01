@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { setTrainerName } from '../../store/slices/trainerName.slice'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-
+import '../0_Styles/home.css'
 const FormNameUser = () => {
   
   const inputName=useRef() //se trae la info del imput
@@ -21,9 +21,9 @@ const FormNameUser = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}> 
-        <input ref={inputName} type="text" />
-        <button>Start</button>
+    <form className='form' onSubmit={handleSubmit}> 
+        <input className='form__input' ref={inputName} type="text" />
+        <button className='form__button'>Start</button>
     </form>
   )
 }
