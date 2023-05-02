@@ -5,6 +5,8 @@ import Pokedex from './pages/Pokedex'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 
 
+//'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
+
 function App() {
 
   return (
