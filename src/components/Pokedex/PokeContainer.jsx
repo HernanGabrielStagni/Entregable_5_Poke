@@ -3,7 +3,7 @@ import useFetch from '../../hooks/useFetch'
 import PokeCard from './PokeCard'
 
 const PokeContainer = () => {
-  const url ='https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
+  const url ='https://pokeapi.co/api/v2/pokemon?limit=5&offset=0'
   const [pokemons, getAllPokemons]= useFetch(url) //destructuro el arreglo que respeta orden y no nombre
   
    useEffect(() => {
@@ -12,7 +12,7 @@ const PokeContainer = () => {
     
   }, [])
   
-  console.log(pokemons)
+  // console.log(pokemons) ////////////////////////
 
 
    return (

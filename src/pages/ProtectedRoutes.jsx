@@ -9,7 +9,7 @@ const ProtectedRoutes = () => {
     if(trainerName.length>=3){
           return <Outlet/>
     } else {
-          alert("coloque un nombre")
+          
           return <Navigate to='/'/>
           }
 
